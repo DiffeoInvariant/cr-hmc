@@ -1,0 +1,22 @@
+-pc_type fieldsplit
+-pc_fieldsplit_type schur
+-pc_fieldsplit_detect_saddle_point
+-ksp_rtol 1e-10
+-snes_stol 1e-10
+-snes_rtol 1e-10
+-snes_max_it 5000
+-ksp_max_it 5000
+-fieldsplit_0_ksp_type preonly
+-fieldsplit_0_pc_type lu
+-fieldsplit_1_ksp_type preonly
+-fieldsplit_1_pc_type none
+
+-snes_converged_reason
+-adj_ksp_converged_reason
+
+-adj_ksp_rtol 1e-10
+-adj_ksp_type preonly
+-adj_pc_type lu
+
+-adj_ksp_monitor
+-snes_monitor
