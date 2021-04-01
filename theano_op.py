@@ -1,7 +1,7 @@
 from crikit.cr import PointMap, JAXArrays
 from crikit.invariants import TensorType
-from crikit.adjoint import array, ndarray, overload_jax, ReducedFunction, Control
-from crikit.adjoint import ReducedFunctional, get_working_tape
+from pyadjiont_utils import array, ndarray, overload_jax, ReducedFunction, Control
+from pyadjoint import ReducedFunctional, get_working_tape
 from jax import numpy as jnp
 import jax
 from typing import Tuple, Iterable
